@@ -4,7 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.ea</groupId>
+    <groupId>ea</groupId>
     <artifactId>advent2020</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.target>12</maven.compiler.target>
+        <maven.compiler.source>12</maven.compiler.source>
+    </properties>
 </project>
