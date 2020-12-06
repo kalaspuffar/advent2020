@@ -28,14 +28,19 @@ public class Forest {
         }
     }
 
+    public void reset() {
+        posx = 0;
+        posy = 0;
+    }
+
     public boolean move(int x, int y) {
         posx += x;
-        posx = posx > maxx ? posx - maxx : posx;
+        //posx = posx >= maxx ? posx - maxx : posx;
         posy += y;
         return posy < maxy;
     }
 
     public boolean hasTree() {
-        return map[(posy * maxx) + posx] == 1;
+        return map[(posy * maxx) + (posx % maxx)] == 1;
     }
 }
